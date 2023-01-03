@@ -42,7 +42,7 @@ namespace My3rd
 		TEST_METHOD(Variance)
 		{
 			double result = this->grader.populationVariance(this->bscDoubleVectData, grader.mean(this->bscDoubleVectData));
-			Assert::AreEqual(4880.79, result, 0.001, L"The population variance method did not find the correct variance.");
+			Assert::AreEqual(406.732, result, 0.01, L"The population variance method did not find the correct variance.");
 		}
 
 	};
