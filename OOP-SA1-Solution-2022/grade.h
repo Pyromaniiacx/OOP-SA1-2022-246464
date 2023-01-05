@@ -54,10 +54,20 @@ public:
 // Class Implementation
 
 long double Grade::sum(const std::vector<double>& values) {
-	return 0;
+	long double Total = 0;
+	for (int sumCounter = 0; sumCounter < values.size(); sumCounter++)
+	{
+		Total += values[sumCounter];
+	}
+	return Total;
 }
 long double Grade::sum(const std::vector<int>& values) {
-	return 0;
+	long double Total = 0;
+	for (int sumCounter = 0; sumCounter < values.size(); sumCounter++)
+	{
+		Total += values[sumCounter];
+	}
+	return Total;
 }
 double Grade::mean(const std::vector<double>& values) {
 	return 0;
