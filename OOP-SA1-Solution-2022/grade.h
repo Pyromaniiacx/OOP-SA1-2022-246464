@@ -53,6 +53,7 @@ public:
 
 // Class Implementation
 
+// Code for sum vector double 
 long double Grade::sum(const std::vector<double>& values) {
 	long double Total = 0;
 	for (int sumCounter = 0; sumCounter < values.size(); sumCounter++)
@@ -61,6 +62,7 @@ long double Grade::sum(const std::vector<double>& values) {
 	}
 	return Total;
 }
+// Code for sum vector int
 long double Grade::sum(const std::vector<int>& values) {
 	long double Total = 0;
 	for (int sumCounter = 0; sumCounter < values.size(); sumCounter++)
@@ -69,6 +71,7 @@ long double Grade::sum(const std::vector<int>& values) {
 	}
 	return Total;
 }
+// Code for mean vector double
 double Grade::mean(const std::vector<double>& values) {
 	double Total = 0;
 	for (int meanCounter = 0; meanCounter < values.size(); meanCounter++)
@@ -78,6 +81,7 @@ double Grade::mean(const std::vector<double>& values) {
 	Total = Total / values.size();
 	return Total;
 }
+// Code for mean vector int
 double Grade::mean(const std::vector<int>& values) {
 	double Total = 0;
 	for (int meanCounter = 0; meanCounter < values.size(); meanCounter++)
@@ -87,6 +91,7 @@ double Grade::mean(const std::vector<int>& values) {
 	Total = Total / values.size();
 	return Total;
 }
+// Code for population variance 
 double Grade::populationVariance(const std::vector<double>& values, double mean) {
 	double Totalmean = Grade::mean(values);
 	double popvariance = 0;
