@@ -88,7 +88,17 @@ double Grade::mean(const std::vector<int>& values) {
 	return Total;
 }
 double Grade::populationVariance(const std::vector<double>& values, double mean) {
-	return 0;
+	double Totalmean = Grade::mean(values);
+	double popvariance = 0;
+	double holder = 0;
+	for (int varianceCounter = 0; varianceCounter < values.size(); varianceCounter++)
+	{
+		holder = values[varianceCounter] - Totalmean;
+		holder = holder * holder;
+		popvariance += holder;
+	}
+	popvariance = popvariance / values.size();
+	return popvariance;
 }
 
 // Sample code passed test
