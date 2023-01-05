@@ -70,10 +70,22 @@ long double Grade::sum(const std::vector<int>& values) {
 	return Total;
 }
 double Grade::mean(const std::vector<double>& values) {
-	return 0;
+	double Total = 0;
+	for (int meanCounter = 0; meanCounter < values.size(); meanCounter++)
+	{
+		Total += values[meanCounter];
+	}
+	Total = Total / values.size();
+	return Total;
 }
 double Grade::mean(const std::vector<int>& values) {
-	return 0;
+	double Total = 0;
+	for (int meanCounter = 0; meanCounter < values.size(); meanCounter++)
+	{
+		Total += values[meanCounter];
+	}
+	Total = Total / values.size();
+	return Total;
 }
 double Grade::populationVariance(const std::vector<double>& values, double mean) {
 	return 0;
